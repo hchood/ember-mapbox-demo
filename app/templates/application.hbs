@@ -1,3 +1,25 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h2 id="title">Welcome to this sweet demo app!</h2>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+
+<div id="map">
+</div>
+
+<script>
+  L.mapbox.accessToken = 'pk.eyJ1IjoiaGNob29kIiwiYSI6ImhGYjR4aVUifQ.7lj4j1w7Bm-L1JZgAazI8A'; // can I put this somewhere else?
+  var map = L.mapbox.map('map', 'hchood.lnpolgfp').setView([40, -74.50], 9);
+</script>
 
 {{outlet}}
