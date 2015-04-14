@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   #map {
     position: absolute;
     top: 0;
@@ -19,7 +19,7 @@
 
 <script>
   L.mapbox.accessToken = 'pk.eyJ1IjoiaGNob29kIiwiYSI6ImhGYjR4aVUifQ.7lj4j1w7Bm-L1JZgAazI8A'; // can I put this somewhere else?
-  var map = L.mapbox.map('map', 'hchood.lnpolgfp').setView([40, -74.50], 9);
+  var map = L.mapbox.map('map', 'hchood.lnpolgfp');
 </script>
 
 {{outlet}}
